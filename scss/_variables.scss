@@ -1,0 +1,10 @@
+$color-header: #DBD0C0;
+$color-ensenanza: #F9CF93;
+$color-aprendizaje: #F9E4C8;
+$color-footer: #DBD0C0;
+$fuente-titulo: 'Playball', cursive;
+$fuente-texto: 'Inter', sans-serif;
+
+@mixin colorFondo($color) {
+    background-color: $color;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;800&family=Playball&display=swap"
+        rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style2.css">
+    <meta name="description" content="Seguinos en nuestras redes y entérate de las últimas novedades. Envía tu formulario o forma parte de Musichool lo más pronto posible.">
+    <meta name="keywords" content="CONTACTO, REDES, UBICACIÓN">
+    <title>Contacto | Musichool</title>
+</head>
+
+<body>
+    <div class="container-fluid header__fondo px-5 py-3 sticky-md-top">
+        <header class="header__navegacion">
+            <nav class="navbar navbar-expand-md navbar-light d-flex justify-content-around">
+                <div class="d-flex navbar-brand">
+                    <img src="../img/logo_musichool2.png" alt="logo" width="40" height="60">
+                    <h1 class="header__navegacion--titulo">Musichool</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion"
+                    aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navegacion">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="ensenanza.html">Enseñanza</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aprendizaje.html">Aprendizaje</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quienes-somos.html">¿Quiénes somos?</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="container-fluid section__fondoContacto">
+        <div class="row px-5 align-items-center">
+            <section class="col section__fuente section__tamañoColumnas">
+                <h2 class="section__fuente--titulo section__fuente--subtitulo ps-lg-5 py-5">Contacto</h2>
+                <form class="row g-3 section__fuente--texto pb-5">
+                    <div>
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control fs-4" id="nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control fs-4" id="apellido" required>
+                    </div>
+                    <div>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control fs-4" id="email" required>
+                    </div>
+                    <div>
+                        <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                        <input type="tel" class="form-control fs-4" id="telefono">
+                    </div>
+                    <div>
+                        <label for="interes" class="form-label">Interés</label>
+                        <select class="form-select fs-4" id="interes" required>
+                            <option selected disabled value="">Elige una opción</option>
+                            <option value="E">Enseñanza</option>
+                            <option value="A">Aprendizaje</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control fs-4" placeholder="Escribir aqui" id="mensaje"
+                            style="height: 300px"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary fs-4" type="submit">Enviar formulario</button>
+                    </div>
+                </form>
+            </section>
+            <div class="col-2"></div>
+            <section class="col-12 col-lg section__fuente">
+                <div class="d-flex">
+                    <img src="../img/whatsapp.png" alt="whatsapp" width="24" height="24">
+                    <p class="ps-2 fs-4">Whatsapp</p>
+                </div>
+                <p class="fs-4">+54 9 11 11112222</p>
+                <div class="d-flex">
+                    <img src="../img/gmail.png" alt="email" width="24" height="24">
+                    <p class="ps-2 fs-4">Email</p>
+                </div>
+                <p class="fs-4">blabla@gmail.com</p>
+                <h2 class="pb-4 pt-5 section__fuente--titulo fs-1">Redes</h2>
+                <div class="row row-cols-auto text-center">
+                    <div class="col">
+                        <img src="../img/instagram.png" alt="instagram" width="40" height="40">
+                        <p class="d-xl-block d-none fs-4">Instagram</p>
+                    </div>
+                    <div class="col">
+                        <img src="../img/facebook.png" alt="facebook" width="40" height="40">
+                        <p class="d-xl-block d-none fs-4">Facebook</p>
+                    </div>
+                    <div class="col">
+                        <img src="../img/twitter.png" alt="twitter" width="40" height="40">
+                        <p class="d-xl-block d-none fs-4">Twitter</p>
+                    </div>
+                </div>
+                <h2 class="pb-4 pt-5 section__fuente--titulo fs-1">¿Dónde estamos?</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9301.718888622774!2d-58.500029162742486!3d-34.486294296055355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1a62897a1b5%3A0xd2fbc2e609de1463!2zTWFydMOtbmV6!5e0!3m2!1ses!2sar!4v1636816215092!5m2!1ses!2sar"
+                    width="500" height="300" style="border:0; max-width: 100%;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        </div>
+    </div>
+    <div class="container-fluid footer__fondo py-5">
+        <footer class="text-center footer__fuente px-5">
+            <section>
+                <h2 class="footer__fuente--weight">Copyright</h2>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
