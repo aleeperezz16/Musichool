@@ -29,6 +29,8 @@ html {
   .header__navegacion .navbar-nav .nav-link {
     color: black;
     font-size: 1.6rem; }
+  .header__navegacion .navbar-nav .nav-link.active {
+    font-weight: bold; }
 
 .section__fuente {
   font-family: "Inter", sans-serif; }
