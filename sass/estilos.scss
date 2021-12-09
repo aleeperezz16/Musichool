@@ -1,4 +1,10 @@
-@import "../bootstrap/scss/bootstrap";
+$primary: #804000;
+$body-color: white;
+$spacer: 2rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Color #804000
 
 @mixin fondo($url) {
     background: url($url) no-repeat center;
