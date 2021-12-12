@@ -11957,6 +11957,16 @@ fieldset:disabled .btn {
   }
 }
 
+.escalado-gris-hover, .guitarra-a, .violin-a, .piano-a, .canto-a, .bajo-a {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.escalado-gris-hover:hover, .guitarra-a:hover, .violin-a:hover, .piano-a:hover, .canto-a:hover, .bajo-a:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
 .sombra-texto, .pulse, h2, .h2, h3, .h3, h5, .h5, h6, .h6, p {
   text-shadow: 0px 0px 5px black;
 }
@@ -11981,6 +11991,40 @@ fieldset:disabled .btn {
   padding-bottom: 1rem;
 }
 
+.guitarra-a {
+  background: url("../img/guitarra-a.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+
+.violin-a {
+  background: url("../img/violin-a.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+
+.piano-a {
+  background: url("../img/piano-a.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+
+.canto-a {
+  background: url("../img/canto-a.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+
+.bajo-a {
+  background: url("../img/bajo-a.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+
+.modal-header {
+  border-bottom-color: #804000;
+}
+
 .fondo-e {
   background: url("../img/fondo-index-e.jpg") no-repeat center;
   background-size: cover;
@@ -11988,6 +12032,11 @@ fieldset:disabled .btn {
 
 .fondo-a {
   background: url("../img/fondo-index-a.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.fondo-qs {
+  background: url("../img/fondo-quienes-somos.jpg") no-repeat center;
   background-size: cover;
 }
 

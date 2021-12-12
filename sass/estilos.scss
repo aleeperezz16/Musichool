@@ -12,6 +12,14 @@ $font-family-sans-serif: "Inter", sans-serif;
     background-size: cover;
 }
 
+.escalado-gris-hover {
+    filter: grayscale(100%);
+
+    &:hover {
+        filter: none;
+    }
+}
+
 .sombra-texto {
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
@@ -38,12 +46,31 @@ $font-family-sans-serif: "Inter", sans-serif;
     } 
 }
 
+$instrumentos: guitarra, violin, piano, canto, bajo;
+
+@each $instrumento in $instrumentos {
+    .#{$instrumento}-a {
+        @include fondo("../img/#{$instrumento}-a.jpg");
+        @extend .escalado-gris-hover;
+
+        width: 100%;
+    }
+}
+
+.modal-header {
+    border-bottom-color: $primary;
+}
+
 .fondo-e {
     @include fondo("../img/fondo-index-e.jpg");
 }
 
 .fondo-a {
     @include fondo("../img/fondo-index-a.jpg");
+}
+
+.fondo-qs {
+    @include fondo("../img/fondo-quienes-somos.jpg");
 }
 
 .card-subtitle {
