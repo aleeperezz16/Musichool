@@ -139,6 +139,10 @@ ul.icon-lista-instrumentos {
     }
 }
 
+.form-floating > label {
+    left: unset;
+}
+
 input[type=file]::-webkit-file-upload-button {
     background-color: var(--bg-dark);
 }
