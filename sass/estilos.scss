@@ -57,6 +57,11 @@ $instrumentos: guitarra, violin, piano, canto, bajo;
     }
 }
 
+ul.icon-lista-instrumentos {
+    fill: $red;
+    list-style-image: url("../img/music-note-beamed.svg");
+}
+
 .modal-header {
     border-bottom-color: $primary;
 }
@@ -134,7 +139,11 @@ $instrumentos: guitarra, violin, piano, canto, bajo;
     }
 }
 
-h2, h3, h5, h6 {
+input[type=file]::-webkit-file-upload-button {
+    background-color: var(--bg-dark);
+}
+
+h2, h3, h5, h6, ul {
     @extend .sombra-texto;
 }
 
