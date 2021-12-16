@@ -1,0 +1,212 @@
+$primary: #804000;
+$body-color: white;
+$spacer: 2rem;
+$font-family-sans-serif: "Inter", sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Color #804000
+
+@mixin fondo($url) {
+    background: url($url) no-repeat center;
+    background-size: cover;
+}
+
+.escalado-gris-hover {
+    filter: grayscale(100%);
+
+    &:hover {
+        filter: none;
+    }
+}
+
+.sombra-texto {
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.contacto-iconos {
+    width: 33px;
+    height: 33px;
+
+    &.special {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.card {
+    background-color: $primary;
+}
+
+.container {
+    &.copyright {
+        @include font-size(0.6rem);
+        text-align: center;
+        padding-bottom: 1rem;
+    } 
+}
+
+$instrumentos: guitarra, violin, piano, canto, bajo;
+
+@each $instrumento in $instrumentos {
+    .#{$instrumento}-a {
+        @include fondo("../img/#{$instrumento}-a.jpg");
+        @extend .escalado-gris-hover;
+
+        width: 100%;
+    }
+}
+
+ul.icon-lista-instrumentos {
+    fill: $red;
+    list-style-image: url("../img/music-note-beamed.svg");
+}
+
+.modal-header {
+    border-bottom-color: $primary;
+}
+
+.fondo-e {
+    @include fondo("../img/fondo-index-e.jpg");
+}
+
+.fondo-a {
+    @include fondo("../img/fondo-index-a.jpg");
+}
+
+.fondo-qs {
+    @include fondo("../img/fondo-quienes-somos.jpg");
+}
+
+.card-subtitle {
+    font-weight: bold;
+}
+
+.nombre-sitio {
+    font-family: "Playball", cursive;
+    @include font-size(5rem);
+    margin-bottom: 0;
+}
+
+.titulo {
+    font-weight: bold;
+    @include font-size(3rem);
+}
+
+.navbar-dark {
+    .navbar-nav {
+        .nav-link {
+            color: $white;
+
+            &:hover:not(.active) {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.bg-transparent {
+    border: none;
+}
+
+.logo-size {
+    @include img-fluid;
+    width: 10%;
+}
+
+@keyframes pulse {
+    0% { 
+        box-shadow: 0 0 0 0 $primary; 
+    }
+}
+
+.pulse {  
+    transition: 0.25s;
+
+    background: none;
+    border: 2px solid;
+    line-height: 1;
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+
+    @extend .sombra-texto;
+
+    &:hover,
+    &:focus { 
+        color: $primary;
+        animation: pulse 1s;
+        box-shadow: 0 0 0 2rem rgba(#fff,0);
+    }
+}
+
+.form-floating > label {
+    left: unset;
+}
+
+
+#carouselAprendizaje img {
+    height: 550px;
+}
+
+#carouselQuienesSomos1 img, 
+#carouselQuienesSomos2 img {
+    height: 450px;
+}
+
+input[type=file]::-webkit-file-upload-button {
+    background-color: var(--bg-dark);
+}
+
+h2, h3, h5, h6, ul {
+    @extend .sombra-texto;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 0;
+    @extend .sombra-texto;
+}
+
+a {
+    color: $white;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .contacto-iconos {
+        width: 38px;
+        height: 38px;
+
+        &.special {
+            width: 33px;
+            height: 33px;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .contacto-iconos {
+        width: 43px;
+        height: 43px;
+
+        &.special {
+            width: 38px;
+            height: 38px;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .contacto-iconos {
+        width: 48px;
+        height: 48px;
+
+        &.special {
+            width: 43px;
+            height: 43px;
+        }
+    }
+}
