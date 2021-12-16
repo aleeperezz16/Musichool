@@ -143,6 +143,16 @@ ul.icon-lista-instrumentos {
     left: unset;
 }
 
+
+#carouselAprendizaje img {
+    height: 550px;
+}
+
+#carouselQuienesSomos1 img, 
+#carouselQuienesSomos2 img {
+    height: 450px;
+}
+
 input[type=file]::-webkit-file-upload-button {
     background-color: var(--bg-dark);
 }
