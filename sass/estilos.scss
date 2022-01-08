@@ -40,7 +40,7 @@ $font-family-sans-serif: "Inter", sans-serif;
 
 .container {
     &.copyright {
-        @include font-size(0.6rem);
+        @include font-size(1rem);
         text-align: center;
         padding-bottom: 1rem;
     } 
@@ -76,6 +76,10 @@ ul.icon-lista-instrumentos {
 
 .fondo-qs {
     @include fondo("../img/fondo-quienes-somos.jpg");
+}
+
+.fondo-contacto {
+    @include fondo("../img/fondo-contacto.jpg");
 }
 
 .card-subtitle {
